@@ -6,7 +6,7 @@
 // Title:   Tax inquiry (cash basis)
 // Free software under GNU GPL
 // ----------------------------------------------------------------
-$page_security = 'SA_TAXREP';
+$page_security = 'SA_TAXREPEX';
 $path_to_root="../..";
 include_once($path_to_root . "/includes/session.inc");
 add_access_extensions();
