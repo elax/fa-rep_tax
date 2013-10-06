@@ -82,7 +82,7 @@ function get_tax_report($tax_rep_id=0)
 	$sql = "SELECT tr.*, cm.account_name liability_name FROM ".TB_PREF."tax_rep tr"
 		. " LEFT JOIN ".TB_PREF."chart_master cm ON tr.liability_account = cm.account_code ";
 	if ($tax_rep_id == 0)
-		$sql .= "WHERE inactive=0";
+		$sql .= "WHERE tr.inactive=0";
 	else
 		$sql .= "WHERE tax_rep_id=".db_escape($tax_rep_id);
 
