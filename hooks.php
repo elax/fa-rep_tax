@@ -10,7 +10,7 @@
 
 define ('SS_TAXREPEX', 103<<8);
 class hooks_rep_tax extends hooks {
-	var $module_name = 'Tax Reporting'; 
+	var $module_name = 'rep_tax'; 
 
 	/*
 		Install additonal menu options provided by module
